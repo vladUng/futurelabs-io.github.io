@@ -3,49 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FutureLabs.io SRL</title>
-    <meta name="description" content="FutureLabs.io SRL — data, AI, and product craftsmanship.">
+    <title>PolaroidMaker iOS - Transform Your Memories Into Timeless Polaroids</title>
+    <meta name="description" content="Professional iOS app that transforms digital photos into authentic polaroid-style images with custom typography, proper dimensions, and high-quality export.">
+    <meta name="keywords" content="iOS, Polaroid, Photo Editor, SwiftUI, Camera, Typography, iPhone, iPad">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://futurelabs-io.com/">
-    <meta property="og:title" content="FutureLabs.io SRL">
-    <meta property="og:description" content="FutureLabs.io SRL — data, AI, and product craftsmanship.">
+    <meta property="og:title" content="PolaroidMaker iOS - Transform Your Memories Into Timeless Polaroids">
+    <meta property="og:description" content="Professional iOS app that transforms digital photos into authentic polaroid-style images with custom typography and high-quality export.">
     <meta property="og:image" content="/assets/og-image.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://futurelabs-io.com/">
-    <meta property="twitter:title" content="FutureLabs.io SRL">
-    <meta property="twitter:description" content="FutureLabs.io SRL — data, AI, and product craftsmanship.">
+    <meta property="twitter:title" content="PolaroidMaker iOS">
+    <meta property="twitter:description" content="Transform your memories into timeless polaroids with authentic dimensions and beautiful typography.">
     <meta property="twitter:image" content="/assets/og-image.png">
     
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" href="/assets/favicon.ico">
     
-    <noscript>
-        <style>
-            body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 20px; background: #f8fafc; }
-            .container { max-width: 720px; margin: 0 auto; text-align: center; }
-            .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        </style>
-    </noscript>
+    <!-- iOS Web App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="PolaroidMaker">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="badge">FutureLabs.io SRL</div>
-            <h1>Something cool is coming ✨</h1>
-            <p>We craft innovative solutions at the intersection of data, artificial intelligence, and exceptional product design.</p>
-            <a href="mailto:vlad@futurelabs-io.com" class="contact-link">Get in touch</a>
-            <div class="footer">
-                <small>&copy; <span id="current-year"></span> FutureLabs.io SRL</small>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge ios-badge">📱 iOS 15.0+</div>
+                <h1>PolaroidMaker iOS</h1>
+                <p class="hero-tagline">Transform your memories into timeless polaroids</p>
+                <p class="hero-description">A sophisticated iOS application that recreates the nostalgic charm of instant Polaroid photography with authentic dimensions, professional typography, and native iOS experience.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#features" class="btn btn-primary">Explore Features</a>
+                    <a href="#installation" class="btn btn-secondary">View on GitHub</a>
+                </div>
+                
+                <div class="hero-mockup">
+                    <div class="device-mockup iphone">
+                        <div class="device-screen">
+                            <div class="app-interface">
+                                <div class="status-bar">9:41 AM</div>
+                                <div class="nav-header">Photo Library</div>
+                                <div class="photo-grid">
+                                    <div class="photo-item selected">📸</div>
+                                    <div class="photo-item">🌅</div>
+                                    <div class="photo-item">🌸</div>
+                                    <div class="photo-item">🏔️</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="device-mockup ipad">
+                        <div class="device-screen">
+                            <div class="app-interface">
+                                <div class="status-bar">9:41 AM</div>
+                                <div class="split-view">
+                                    <div class="sidebar">Albums</div>
+                                    <div class="main-content">
+                                        <div class="polaroid-preview">
+                                            <div class="polaroid-frame">
+                                                <div class="polaroid-photo">🌅</div>
+                                                <div class="polaroid-text">Summer 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <p class="section-subtitle">Professional-grade tools for creating authentic polaroid experiences</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Smart Photo Library Integration</h3>
+                    <p>Seamless access to all photos and albums with intelligent thumbnail caching built on Photos framework with PHCachingImageManager for optimal performance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Advanced Typography System</h3>
+                    <p>Professional dual-line text system with distinct font categories. Line 1: Professional fonts (SF Pro, New York, Georgia). Line 2: Handwriting fonts (Patrick Hand, Bradley Hand) with real-time preview.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>Authentic Polaroid Dimensions</h3>
+                    <p>Mathematically accurate polaroid proportions based on real film dimensions. Portrait: 2189px × 1800px (10.7cm × 8.8cm) with professional white borders and square corners.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-Device Adaptation</h3>
+                    <p>Native iOS layouts optimized for each device. iPhone: NavigationStack with sequential flow. iPad: NavigationSplitView with three-pane layout for efficient workflow.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Intelligent Location Integration</h3>
+                    <p>Automatic city/country detection from photo GPS data. Location access only when needed, fully configurable, with privacy-first approach.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h3>Export & Sharing</h3>
+                    <p>High-quality export with iOS Share Sheet integration. Features hold-to-preview, batch processing, multiple format support, and 3x text scaling for readability.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Performance Optimization</h3>
+                    <p>Memory-efficient processing for large photo collections with lazy loading, viewport-based image loading, and automatic memory management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section id="technical" class="technical-specs">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li><strong>Platform:</strong> iOS 15.0+</li>
+                        <li><strong>Devices:</strong> iPhone, iPad (universal)</li>
+                        <li><strong>Languages:</strong> Swift 5.0+</li>
+                        <li><strong>Architecture:</strong> SwiftUI with MVVM pattern</li>
+                    </ul>
+                </div>
+                
+                <div class="spec-card">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li><strong>Photos & PhotosUI:</strong> Core functionality</li>
+                        <li><strong>CoreLocation:</strong> GPS metadata</li>
+                        <li><strong>CoreGraphics:</strong> High-quality rendering</li>
+                        <li><strong>SwiftUI:</strong> Native iOS interface</li>
+                    </ul>
+                </div>
+                
+                <div class="spec-card">
+                    <h3>Permissions</h3>
+                    <ul>
+                        <li><strong>Photo Library Access:</strong> Required</li>
+                        <li><strong>Location When In Use:</strong> Optional</li>
+                        <li><strong>Privacy-First:</strong> Configurable access</li>
+                        <li><strong>Secure:</strong> On-device processing</li>
+                    </ul>
+                </div>
+                
+                <div class="spec-card">
+                    <h3>Architecture</h3>
+                    <ul>
+                        <li><strong>MVVM Pattern:</strong> Clean separation</li>
+                        <li><strong>Dual Image Loading:</strong> Optimized pipelines</li>
+                        <li><strong>Memory Management:</strong> Batch processing</li>
+                        <li><strong>Error Handling:</strong> Robust integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>Screenshots</h2>
+            <p class="section-subtitle">See PolaroidMaker in action across iPhone and iPad</p>
+            
+            <div class="screenshot-grid">
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <div class="device-frame iphone-frame">
+                            <div class="screenshot-content">
+                                <h4>Album Selection</h4>
+                                <p>Browse your photo library with intuitive album organization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <div class="device-frame iphone-frame">
+                            <div class="screenshot-content">
+                                <h4>Multi-Selection</h4>
+                                <p>Select multiple photos with numbered badges and haptic feedback</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <div class="device-frame ipad-frame">
+                            <div class="screenshot-content">
+                                <h4>Typography Controls</h4>
+                                <p>Professional text editing with font selection and live preview</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <div class="device-frame ipad-frame">
+                            <div class="screenshot-content">
+                                <h4>Final Results</h4>
+                                <p>High-quality polaroid output with authentic dimensions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="installation" class="installation">
+        <div class="container">
+            <h2>Installation & Setup</h2>
+            
+            <div class="install-grid">
+                <div class="install-card">
+                    <h3>For Developers</h3>
+                    <pre class="code-block"><code># Clone the repository
+git clone https://github.com/futurelabs-io/PolaroidMaker-iOS.git
+
+# Open in Xcode
+open PolaroidMaker-iOS.xcodeproj
+
+# Build for iPhone Simulator
+xcodebuild -project PolaroidMaker-iOS.xcodeproj \
+           -scheme PolaroidMaker-iOS \
+           -sdk iphonesimulator \
+           -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=18.6' \
+           build</code></pre>
+                </div>
+                
+                <div class="install-card">
+                    <h3>Privacy Configuration</h3>
+                    <pre class="code-block"><code># Required Info.plist entries (automatically configured)
+INFOPLIST_KEY_NSPhotoLibraryUsageDescription =
+  "PolaroidMaker needs access to your photos to create polaroid-style images."
+
+INFOPLIST_KEY_NSLocationWhenInUseUsageDescription =
+  "We use photo locations to automatically add city and country information."</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributing Section -->
+    <section id="contributing" class="contributing">
+        <div class="container">
+            <h2>Contributing</h2>
+            
+            <div class="contributing-grid">
+                <div class="contrib-card">
+                    <h3>Development Setup</h3>
+                    <ul>
+                        <li>Xcode 15.0+ required</li>
+                        <li>iOS 15.0+ deployment target</li>
+                        <li>Swift 5.0+ language version</li>
+                        <li>SwiftUI framework knowledge preferred</li>
+                    </ul>
+                </div>
+                
+                <div class="contrib-card">
+                    <h3>Code Style</h3>
+                    <ul>
+                        <li>Follow Swift API Design Guidelines</li>
+                        <li>Use meaningful variable and function names</li>
+                        <li>Comment complex image processing logic</li>
+                        <li>Maintain MVVM architecture patterns</li>
+                    </ul>
+                </div>
+                
+                <div class="contrib-card">
+                    <h3>Pull Request Process</h3>
+                    <ul>
+                        <li>Fork the repository</li>
+                        <li>Create feature branch from main</li>
+                        <li>Test on both iPhone and iPad simulators</li>
+                        <li>Submit PR with clear description</li>
+                    </ul>
+                </div>
+                
+                <div class="contrib-card">
+                    <h3>Device Compatibility</h3>
+                    <ul>
+                        <li>iPhone: Haptic feedback, swipe navigation</li>
+                        <li>iPad: Three-pane layout, drag-and-drop</li>
+                        <li>Accessibility: VoiceOver, Dynamic Type</li>
+                        <li>Performance: Memory-efficient processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>PolaroidMaker iOS</h4>
+                    <p>Transform your memories into timeless polaroids with professional-grade quality and authentic nostalgic charm.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Technologies</h4>
+                    <ul>
+                        <li>SwiftUI & Photos Framework</li>
+                        <li>CoreLocation & CoreGraphics</li>
+                        <li>iOS 15.0+ Universal App</li>
+                        <li>MVVM Architecture</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Acknowledgments</h4>
+                    <ul>
+                        <li>OpenAI: Advanced AI technology</li>
+                        <li>Claude Code: Development assistance</li>
+                        <li>Apple: iOS frameworks and design</li>
+                        <li>nanobanana: Image processing</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="mailto:vlad@futurelabs-io.com">Contact Developer</a></li>
+                        <li><a href="#installation">View Source Code</a></li>
+                        <li><a href="#contributing">Report Issues</a></li>
+                        <li><a href="#features">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-branding">
+                    <p class="app-credit">&copy; <span id="current-year"></span> PolaroidMaker iOS</p>
+                    <p class="company-credit">Developed by <a href="https://futurelabs-io.com" target="_blank" rel="noopener">FutureLabs.io SRL</a></p>
+                    <p class="tagline">Crafted with precision and nostalgia at the intersection of data, AI, and product craftsmanship.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
