@@ -1,0 +1,194 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Inter, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Container and card layout */
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+}
+
+/* Badge styling */
+.badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.025em;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact link */
+.contact-link {
+    display: inline-block;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.contact-link:hover {
+    background: #2563eb;
+}
+
+.contact-link:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer small {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+    .card {
+        padding: 2rem 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+    
+    .card {
+        padding: 1.5rem 1rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .card {
+        border: 2px solid #000;
+    }
+    
+    .badge {
+        background: #000;
+        color: #fff;
+    }
+    
+    .contact-link {
+        background: #000;
+        border: 2px solid #000;
+    }
+    
+    .contact-link:hover {
+        background: #fff;
+        color: #000;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .card {
+        transition: none;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+}
+
+/* Focus indicators for accessibility */
+*:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Ensure sufficient color contrast */
+body {
+    background: #f8fafc;
+}
+
+.card {
+    background: #ffffff;
+}
